@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Resume</title>
+	<meta name="viewport" content="target-densitydpi=device-dpi">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="cv.css">
+</head>
+<body class="overflow_hidden">
+	<div id="dispatcher">
+		<h1>Hi there</h1>
+		<div class="conditions">
+			<div id="error_notification" class="hidden">
+				Oops, Sorry but you need to choose one of these:
+				<ul>
+					<li>
+						Intro
+					</li>
+					<li>
+						Motivation
+					</li>
+					<li>
+						Contact
+					</li>
+				</ul>
+			</div>
+			<div class="condition_size variable_defintion">
+				<div class="comment">
+					// Please Choose based on below conditions.
+				</div>
+				<span class="variable">destination = </span> <input type="text" id="choice">
+				<button id="choose_condition" onclick="choose()">choose</button>
+			</div>
+			<div class="condition_to_choose condition_size">
+				<span class="condition">if</span> 
+				<span class="parentheses">(</span>
+				<span class="logic_condition"> <span class="variable">destination</span> <span class="equal"> == </span> <span class="chosen_value">"Intro"</span></span>
+				<span class="parentheses">)</span>
+				<span class="curly_braces">{</span>
+					<div class="implementation">
+						<span class="class_object">Go</span>
+						<span>.to(</span>
+						<span><img src="https://img.icons8.com/clouds/100/000000/training.png"/></span>
+						<span>) ;</span>
+					</div>
+				<span class="curly_braces">}</span>
+			</div>
+			<div class="condition_to_choose condition_size">
+				<span class="condition">else if</span> 
+				<span class="parentheses">(</span> 
+				<span class="logic_condition"> <span class="variable">destination</span> <span class="equal"> == </span> <span class="chosen_value">"Motivation"</span></span>
+				<span class="parentheses">)</span>
+				<span class="curly_braces">{</span>
+					<div class="implementation">
+						<span class="class_object">Go</span>
+						<span>.to(</span>
+						<span class="disp_image"><img src="https://img.icons8.com/cotton/64/000000/maslow-pyramid.png"/></span>
+						<span>) ;</span>
+					</div>
+				<span class="curly_braces">}</span>
+			</div>
+			<div class="condition_to_choose condition_size">
+				<span class="condition">else if </span> 
+				<span class="parentheses">(</span> 
+				<span class="logic_condition"> <span class="variable">destination</span> <span class="equal"> == </span> <span class="chosen_value">"Contact"</span></span>
+				<span class="parentheses">)</span>
+				<span class="curly_braces">{</span>
+					<div class="implementation">
+						<span class="class_object">Go</span>
+						<span>.to(</span>
+						<span class="disp_image"><img src="https://img.icons8.com/bubbles/100/000000/contact-card.png"/></span>
+						<span>) ;</span>
+					</div>
+				<span class="curly_braces">}</span>
+			</div>
+		</div>
+	</div>
+	<div class="burger_menu" onclick="display_pages()">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div id="laverage_buttons" class="hidden">
+		<div onclick="change_layer('intro')">
+			<img src="https://img.icons8.com/wired/64/000000/training.png"/>
+			<span class="page_name">Intro</span>
+		</div>
+		<div onclick="change_layer('motivation')">
+			<img src="https://img.icons8.com/dotty/80/000000/proactivity.png"/>
+			<span class="page_name">Motivation</span>
+		</div>
+		<div onclick="change_layer('contact')">
+			<img src="https://img.icons8.com/wired/64/000000/ringing-phone.png"/>
+			<span class="page_name">Contact</span>
+		</div>
+	</div>
+	<div>
+		<section id="intro" onclick="change_layer('intro')">
+			<div>
+				<p>Hi again, I'm <span class="my_name">Areg</span>, 21 years old, self-tought programmer. I think I have enough skills
+				and cognitive abilities to gain knowledge, which you are kindly
+				trying to give to us based on which I will be able 
+				to make your company to succeed and why not to make world a better place to live.</p>
+			</div>
+		</section>
+		<section id="motivation" onclick="change_layer('motivation')">
+			<div class="motivation_message">
+				<h1>Motivation Letter</h1>
+				<p>I would like to apply for the web programming courses which I have seen advertised in your web site.	
+				I am learning my Bachelor’s degree in General Finance at Armenian State University of Economics but now
+				I am stadying programming on my own becouse it is very interesting, modern and I’m very passionate about it.</p>
+
+				<br>
+
+				<p>If you are intereseted in a person, who is dedicated, determined and gole-oriented, in a person, 
+				who has analitical skills and logical reasoning abilities, in a person who likes technology and modern world,
+				in a person who is problem solver (e.g. math, chess, etc.), then I think we can cooperate. 
+				I think It’s not a good manner to speak about yourself like you don’t have any problems (for sure I have ones), 
+				but I couldn’t mention my problem solver nature, because it’s my one of the vital parts.</p>
+
+				<br>
+
+				<p>I’m very serious about this field and I will concentrate my whole potential to conquer difficulties which will face me in this journey.
+				And I’m very grateful that you are giving this kind of hope and opportunity to people, who are this kind of passionate of this field.</p>
+			</div>
+		</section>
+		<section id="contact" onclick="change_layer('contact')">
+			<ul class="contact_ul">
+				<div>
+					<strong>Address: </strong>
+					Armenia, Yerevan, st Leningradyan 1
+				</div>
+				<div>
+					<strong>E-mail: </strong>
+					<a href="mailto:areghakobyan99@gmail.com">areghakobyan99@gmail.com</a>  
+				</div>
+				<div>
+					<strong>Phone: </strong>
+					+374 - 94 - 899 - 803
+				</div>
+			</ul>
+		</section>
+	</div>
+</body>
+<script src="cv.js"></script>
+</html>

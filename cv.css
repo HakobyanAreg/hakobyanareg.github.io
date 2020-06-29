@@ -1,0 +1,337 @@
+body {
+	margin: 0;
+	position: relative;
+	overflow-x: hidden;
+}
+
+/* general */
+.hidden {
+	display: none!important
+}
+
+.overflow_hidden {
+	overflow: hidden;
+}
+
+#error_notification {
+	color: black;
+	background: red;
+	border-radius: 10px;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	font-size: 20px;
+	margin-right: 80px;
+}
+
+.page_name {
+	font-size: 35px;
+}
+
+#laverage_buttons > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#laverage_buttons > div:hover {
+	color: aqua;
+}
+
+/* Icons for dispatching */
+#laverage_buttons {
+	z-index: 6;
+	position: absolute;
+	background: lime;	
+	right: 10px;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: .5rem;
+	transform: scale(0.7)
+}
+
+#laverage_buttons div:hover {
+	cursor: pointer;
+}
+
+.dispatcher_navigation {
+	z-index: 6;
+}
+
+/* variable definition */
+.variable_defintion {
+	margin-bottom: 2rem;
+}
+
+/* Conditions */
+#dispatcher {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: #FFF;
+	z-index: 2;
+}
+
+.conditions {
+	padding: 3rem;
+	border-radius: 10px;
+	background: #282c34;
+	margin: 0 auto;
+	position: absolute;
+	left: 30%;
+	top: 10%;
+	width: 670px
+}
+
+@media only screen and (max-width: 600px) {
+	.conditions {
+		left: 0;
+		width: 100vw;
+		border-radius: 0;
+	}
+
+	#laverage_buttons {
+		margin-top: 20px;
+		right: 0;
+	}
+}
+
+
+/* Code layout and style */
+.implementation {
+	margin-left: 40px;
+	color: #FFF;
+	display: flex;
+}
+
+.comment {
+	color: green;
+}
+
+.condition {
+	color: red;
+	font-weight: 600
+}
+
+.parentheses {
+	color: green;
+}
+
+.chosen_value {
+	color: #a29562
+}
+
+.equal {
+	color: #FFF;
+}
+
+
+/* variable definition styling */
+.variable {
+	color: aqua;
+}
+
+#choice {
+	border: unset;
+	border-radius: 3px;
+	height: 26px;
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+	.condition_size {
+		font-size: 17px!important;
+	}
+
+	#choice {
+		width: 110px;
+	}
+
+	#choose_condition {
+		font-size: 13px!important;
+
+	}
+}
+
+.motivation_message {
+	font-size: 22px;
+	margin-left: 14rem;
+	margin-top: 2%;
+	width: 50%;
+	line-height: 3rem;
+	font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+	.motivation_message {
+		margin-left: 5px;
+		width: 90%;
+	}
+}
+
+
+#choose_condition {
+	height: 29px;
+	border: unset;
+	color: #fff;
+	font-weight: 700;
+	font-size: 20px;
+	background-color: blue;
+}
+
+#choose_condition:hover {
+	cursor: pointer;
+}
+
+.implementation img {
+	transform: scale(0.5);
+}
+
+.disp_image {
+	align-self: center;
+}
+
+.implementation > span {
+	align-self: center;
+}
+
+.condition_size {
+	font-size: 28px;
+}
+
+.curly_braces {
+	color: aqua
+}
+
+.class_object {
+	color: yellow
+}
+
+.condition_to_choose {
+	margin-bottom: 0.5rem;
+}
+
+#dispatcher > h1 {
+	text-align: center;
+}
+
+/* elements with contents  */
+#intro {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to right, #076585, #fff);
+	position: absolute; 
+	color: white;
+	font-size: 40px;
+	font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+}
+
+#motivation {
+	background-image: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
+}
+
+#experience {
+	background: linear-gradient(to right, #00467f, #a5cc82);
+}
+
+#contact {
+	font-size: 40px;
+	background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+.contact_ul {
+	margin-left: 24rem;
+	margin-top: 5%;
+}
+
+.contact_ul > div {
+	margin-bottom: 4rem;
+}
+
+#intro > div {
+	margin-top: 5%;
+	margin-left: 14rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.contact_ul {
+		margin-top: 100px;
+		margin-left: 5px;
+	}
+
+	#contact {
+		font-size: 20px;
+	}
+
+	#intro {
+		font-size: 30px;
+	}
+
+	#intro > div {
+		margin-left: 5px;
+	}
+
+	#motivation {
+		height: unset!important;
+	}
+
+	.burger_menu {
+		right: 1px!important;
+		top: 10px!important;
+	}
+}
+
+.burger_menu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	z-index: 10;
+	right: 1rem;
+	top: 2rem;
+}
+
+.burger_menu:hover {
+	cursor: pointer;
+}
+
+/* burger menu */
+.burger_menu > span {
+	z-index: 10;
+	width: 30px;
+	height: 3px;
+	background-color: black;
+	margin-bottom: 4px;
+}
+
+.my_name {
+	color: red;
+}
+
+#experience {
+	width: 100vw;
+	height: 100vh;
+	background-color: green;
+	position: absolute;
+}
+
+#motivation {
+	width: 100vw;
+	height: 100vh;
+	background-color: blue;
+	position: absolute;
+}
+
+#contact {
+	width: 100vw;
+	height: 100vh;
+	background-color: yellow;
+	position: absolute;
+}
+
+.upper_layer {
+	z-index: 5;
+}
